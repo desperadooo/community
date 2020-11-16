@@ -4,7 +4,9 @@ import com.nowcoder.community.entity.LoginTicket;
 import org.apache.ibatis.annotations.*;
 
 //用注解的方式写SQL语句
+//改Mapper不推荐使用了，因为我们用redis来存储登陆凭证了
 @Mapper
+@Deprecated
 public interface LoginTicketMapper {
 
     @Insert({
